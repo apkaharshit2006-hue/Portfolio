@@ -36,8 +36,8 @@ Built using Next.js 15 (App Router), TypeScript, Tailwind CSS, Framer Motion, Ap
 
 ### 1. Clone & Install Dependencies
 ```bash
-git clone https://github.com/harshit-sinha/harshit-portfolio.git
-cd harshit-portfolio
+git clone https://github.com/harshit-sinha/Portfolio.git
+cd Portfolio
 npm install
 ```
 
@@ -66,19 +66,19 @@ npm run start
 
 ### Step 1: Create a GitHub Repository
 1. Go to [github.com/new](https://github.com/new).
-2. Name your repository `harshit-portfolio`.
+2. Name your repository `Portfolio`.
 3. Leave it public or private, do NOT initialize with a README (this project already has one).
 
 ### Step 2: Push Local Code to GitHub
 Run the following commands inside this directory:
 ```bash
-git remote add origin https://github.com/<YOUR_GITHUB_USERNAME>/harshit-portfolio.git
+git remote add origin https://github.com/<YOUR_GITHUB_USERNAME>/Portfolio.git
 git branch -M main
 git push -u origin main
 ```
 
 ### Step 3: One-Click Deploy to Vercel
-1. Go to [vercel.com/new](https://vercel.com/new) and import your `harshit-portfolio` GitHub repository.
+1. Go to [vercel.com/new](https://vercel.com/new) and import your `Portfolio` GitHub repository.
 2. Add your environment variables (`OPENAI_API_KEY`).
 3. Click **Deploy**. Vercel will automatically build and publish your portfolio with HTTPS and global CDN edge routing.
 
