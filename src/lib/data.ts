@@ -94,7 +94,7 @@ export const EXPERIENCES: ExperienceItem[] = [
   {
     id: "exp-1",
     role: "NGO Intern – Data & Content Research",
-    organization: "Drazyashakti / Dryzyashakti Trust",
+    organization: "Drazyashakti Trust",
     period: "2024 – Present",
     location: "Navi Mumbai, India",
     type: "Internship",

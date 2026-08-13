@@ -1,8 +1,13 @@
-import { openai } from '@ai-sdk/openai';
+import { createOpenAI } from '@ai-sdk/openai';
 import { streamText } from 'ai';
 import { PERSONAL_INFO, PROJECTS, EXPERIENCES } from '@/lib/data';
 
 export const runtime = 'edge';
+
+const groq = createOpenAI({
+  apiKey: process.env.GROQ_API_KEY ?? process.env.OPENAI_API_KEY ?? '',
+  baseURL: 'https://api.groq.com/openai/v1',
+});
 
 export async function POST(req: Request) {
   try {
@@ -32,7 +37,7 @@ TONE & STYLE INSTRUCTIONS:
 `;
 
     const result = streamText({
-      model: openai('gpt-4o-mini'),
+      model: groq('llama-3.3-70b-versatile'),
       system: systemPrompt,
       messages,
     });

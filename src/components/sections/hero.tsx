@@ -52,6 +52,15 @@ export function HeroSection() {
           I am <strong className="text-white">{PERSONAL_INFO.name}</strong>. I transform raw database queries, Python analytics pipelines, and Generative GAN models into strategic enterprise decision assets.
         </motion.p>
 
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.25 }}
+          className="mt-3 text-xs sm:text-sm font-mono text-indigo-400/80 tracking-tight"
+        >
+          {PERSONAL_INFO.tagline}
+        </motion.p>
+
         {/* Action Buttons */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}

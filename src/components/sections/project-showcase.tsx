@@ -7,7 +7,7 @@ import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { PROJECTS } from '@/lib/data';
 import { Project } from '@/types/portfolio';
-import { ExternalLink, Github, Layers, ArrowUpRight, CheckCircle2, AlertCircle } from 'lucide-react';
+import { ExternalLink, Github, Layers, ArrowUpRight, CheckCircle2, AlertCircle, Sparkles } from 'lucide-react';
 
 export function ProjectShowcase() {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
@@ -124,6 +124,18 @@ export function ProjectShowcase() {
                 </h4>
                 <ul className="list-disc pl-5 space-y-1 text-gray-400">
                   {selectedProject.challenges.map((item) => (
+                    <li key={item}>{item}</li>
+                  ))}
+                </ul>
+              </div>
+
+              <div>
+                <h4 className="text-sm font-semibold text-white mb-2 flex items-center gap-2">
+                  <Sparkles className="w-4 h-4 text-indigo-400" />
+                  Key Lessons Learned
+                </h4>
+                <ul className="list-disc pl-5 space-y-1 text-gray-400">
+                  {selectedProject.lessonsLearned.map((item) => (
                     <li key={item}>{item}</li>
                   ))}
                 </ul>
