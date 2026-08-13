@@ -23,7 +23,7 @@ export function AboutSection() {
     {
       icon: BarChart3,
       title: "Quantitative Research & DEI BI",
-      description: "Analyzing large-scale qualitative and quantitative data at Drazyashakti Trust for workplace disability inclusion.",
+      description: "Analyzing large-scale qualitative and quantitative data at Drazyashakti / Dryzyashakti Trust for workplace disability inclusion.",
       badge: "Analytics",
     },
     {

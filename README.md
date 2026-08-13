@@ -90,7 +90,7 @@ git push -u origin main
 - **Degree:** Bachelor's in Business Administration (Business Analytics) — ITM Skills University
 - **Core Skills:** Python (Pandas, NumPy, OpenCV, PyTorch/TensorFlow), SQL/MySQL (Data Querying, Aggregations, Joins), MS Suite.
 - **Experience:** NGO Data Research Intern at Drazyashakti Trust.
-- **Key Projects:** Deep Learning GAN Handwriting Generation Engine, DEI Analytics Research Platform.
+- **Key Projects:** Deep Learning GAN Handwriting Generation Engine, Algorithmic Trading Strategy System.
 
 ---
 

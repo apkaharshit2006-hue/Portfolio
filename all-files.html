@@ -81,7 +81,7 @@
     <div class="stats">
       <span>32 files</span>
       <span>|</span>
-      <span>1866 lines</span>
+      <span>1878 lines</span>
     </div>
   </header>
   <main>
@@ -184,7 +184,7 @@ git push -u origin main
 - **Degree:** Bachelor's in Business Administration (Business Analytics) — ITM Skills University
 - **Core Skills:** Python (Pandas, NumPy, OpenCV, PyTorch/TensorFlow), SQL/MySQL (Data Querying, Aggregations, Joins), MS Suite.
 - **Experience:** NGO Data Research Intern at Drazyashakti Trust.
-- **Key Projects:** Deep Learning GAN Handwriting Generation Engine, DEI Analytics Research Platform.
+- **Key Projects:** Deep Learning GAN Handwriting Generation Engine, Algorithmic Trading Strategy System.
 
 ---
 
@@ -367,8 +367,8 @@ export default config;
         </header>
         <pre><code class="lang-typescript">/// &lt;reference types="next" /&gt;
 /// &lt;reference types="next/image-types/global" /&gt;
-import "./.next/types/routes.d.ts";
-import "./.next/types/root-params.d.ts";
+import "./.next/dev/types/routes.d.ts";
+import "./.next/dev/types/root-params.d.ts";
 
 // NOTE: This file should not be edited
 // see https://nextjs.org/docs/app/api-reference/config/typescript for more information.
@@ -528,36 +528,36 @@ export const PROJECTS: Project[] = [
     ]
   },
   {
-    id: "dei-speaker-analytics",
-    title: "Diversity &amp; Inclusion Research Data Platform",
-    subtitle: "Quantitative Research Pipeline &amp; Content Analytics for NGO Operations",
-    category: "Business Intelligence",
+    id: "trading-algorithm",
+    title: "Algorithmic Trading Strategy System",
+    subtitle: "Python Backtesting &amp; Signal Generation Engine for Automated Market Strategies",
+    category: "Data Analytics",
     featured: true,
-    businessProblem: "Non-profit organizations struggle to systematically evaluate event reach, speaker diversity representation, and workplace inclusion metrics across scattered research documents.",
-    whyItMatters: "Data-driven DEI visibility enables organization leaders to allocate resources effectively and attract key decision-makers for maximum social impact.",
-    architectureDiagramSvg: `&lt;svg viewBox="0 0 800 240" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-auto text-emerald-400"&gt;&lt;rect x="40" y="70" width="160" height="100" rx="12" fill="#18181B" stroke="#10B981" stroke-width="2"/&gt;&lt;text x="120" y="125" fill="#FFF" text-anchor="middle" font-size="14" font-weight="bold"&gt;Raw Research Data&lt;/text&gt;&lt;path d="M200 120H280" stroke="#10B981" stroke-width="2"/&gt;&lt;rect x="280" y="50" width="240" height="140" rx="12" fill="#064E3B" stroke="#10B981" stroke-width="2"/&gt;&lt;text x="400" y="105" fill="#A7F3D0" text-anchor="middle" font-size="14" font-weight="bold"&gt;MySQL Analytics Engine&lt;/text&gt;&lt;text x="400" y="135" fill="#D1D5DB" text-anchor="middle" font-size="12"&gt;Joins &amp; Aggregations&lt;/text&gt;&lt;path d="M520 120H600" stroke="#10B981" stroke-width="2"/&gt;&lt;rect x="600" y="70" width="160" height="100" rx="12" fill="#18181B" stroke="#6366F1" stroke-width="2"/&gt;&lt;text x="680" y="125" fill="#6366F1" text-anchor="middle" font-size="14" font-weight="bold"&gt;BI Dashboards&lt;/text&gt;&lt;/svg&gt;`,
-    techStack: ["MySQL", "Python (Pandas)", "Excel Advanced Analytics", "PowerPoint Storytelling"],
-    aiWorkflowDescription: "Categorized qualitative speaker research and conference metrics into relational data structures for quick query retrieval and reporting.",
-    screenshots: ["/assets/projects/dei-analytics.png"],
+    businessProblem: "Manual trading decisions are slow, emotionally biased, and difficult to validate systematically across different market conditions.",
+    whyItMatters: "Automated, data-driven signal generation enables consistent execution, faster backtesting iteration, and reduced emotional decision-making.",
+    architectureDiagramSvg: `&lt;svg viewBox="0 0 800 240" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-auto text-purple-400"&gt;&lt;rect x="40" y="70" width="160" height="100" rx="12" fill="#18181B" stroke="#8B5CF6" stroke-width="2"/&gt;&lt;text x="120" y="125" fill="#FFF" text-anchor="middle" font-size="14" font-weight="bold"&gt;Market Data Feed&lt;/text&gt;&lt;path d="M200 120H280" stroke="#A78BFA" stroke-width="2"/&gt;&lt;rect x="280" y="50" width="240" height="140" rx="12" fill="#2E1065" stroke="#8B5CF6" stroke-width="2"/&gt;&lt;text x="400" y="105" fill="#C4B5FD" text-anchor="middle" font-size="14" font-weight="bold"&gt;Strategy &amp; Signal Engine&lt;/text&gt;&lt;text x="400" y="135" fill="#D1D5DB" text-anchor="middle" font-size="12"&gt;Backtesting &amp; Risk Checks&lt;/text&gt;&lt;path d="M520 120H600" stroke="#A78BFA" stroke-width="2"/&gt;&lt;rect x="600" y="70" width="160" height="100" rx="12" fill="#18181B" stroke="#10B981" stroke-width="2"/&gt;&lt;text x="680" y="125" fill="#10B981" text-anchor="middle" font-size="14" font-weight="bold"&gt;Trade Signals&lt;/text&gt;&lt;/svg&gt;`,
+    techStack: ["Python", "Pandas", "NumPy", "Backtesting", "MySQL", "Matplotlib"],
+    aiWorkflowDescription: "Designed rule-based and indicator-driven strategies, validated across historical datasets, and quantified risk-adjusted performance with realistic cost modelling.",
+    screenshots: ["/assets/projects/trading-algorithm.png"],
     businessImpact: [
-      "Curated data for 50+ professional speaker profiles across global disability inclusion initiatives",
-      "Improved conference target alignment by 45% using structured data insights",
-      "Accelerated brochure and communication material generation"
+      "Systematized multi-asset signal generation for consistent execution",
+      "Enabled rapid iteration across backtesting scenarios",
+      "Reduced reliance on manual and emotionally-driven trading"
     ],
     challenges: [
-      "Standardizing qualitative research inputs into structured relational database schemas",
-      "Maintaining low latency queries across cross-tabulated event tracking"
+      "Eliminating look-ahead bias and data leakage in historical backtests",
+      "Modelling realistic transaction costs, slippage, and liquidity constraints"
     ],
     lessonsLearned: [
-      "Relational schema normalization dramatically reduces data duplication in multi-speaker databases",
-      "Visual executive summaries drive faster leadership buy-in than long text documents"
+      "Realistic cost and slippage modelling is essential for trustworthy backtests",
+      "Diversifying across uncorrelated strategies improves overall stability"
     ],
-    githubUrl: "https://github.com/harshit-sinha/dei-analytics-platform",
+    githubUrl: "https://github.com/apkaharshit2006-hue/Trading-Algorythm",
     downloadableReportUrl: "#",
     metrics: [
-      { label: "Profiles Curated", value: "50+", growth: "+100%" },
-      { label: "Data Quality Score", value: "99.1%", growth: "+35%" },
-      { label: "Reporting Speed", value: "2 Days", growth: "-60%" }
+      { label: "Backtest Coverage", value: "5+ Yrs", growth: "—" },
+      { label: "Signal Latency", value: "&lt;50ms", growth: "—" },
+      { label: "Strategies", value: "3+", growth: "—" }
     ]
   }
 ];
@@ -566,7 +566,7 @@ export const EXPERIENCES: ExperienceItem[] = [
   {
     id: "exp-1",
     role: "NGO Intern – Data &amp; Content Research",
-    organization: "Drazyashakti Trust",
+    organization: "Drazyashakti / Dryzyashakti Trust",
     period: "2024 – Present",
     location: "Navi Mumbai, India",
     type: "Internship",
@@ -1559,8 +1559,8 @@ export function HeroSection() {
             &lt;div className="text-xs text-gray-400 mt-1"&gt;GAN Authenticity&lt;/div&gt;
           &lt;/div&gt;
           &lt;div className="p-3 text-center border-l border-white/5"&gt;
-            &lt;div className="text-2xl font-bold font-mono text-emerald-400"&gt;50+&lt;/div&gt;
-            &lt;div className="text-xs text-gray-400 mt-1"&gt;DEI Profiles Analyzed&lt;/div&gt;
+            &lt;div className="text-2xl font-bold font-mono text-emerald-400"&gt;3+&lt;/div&gt;
+            &lt;div className="text-xs text-gray-400 mt-1"&gt;Trading Strategies&lt;/div&gt;
           &lt;/div&gt;
           &lt;div className="p-3 text-center border-l border-white/5"&gt;
             &lt;div className="text-2xl font-bold font-mono text-indigo-400"&gt;MySQL&lt;/div&gt;
@@ -1608,7 +1608,7 @@ export function AboutSection() {
     {
       icon: BarChart3,
       title: "Quantitative Research &amp; DEI BI",
-      description: "Analyzing large-scale qualitative and quantitative data at Drazyashakti Trust for workplace disability inclusion.",
+      description: "Analyzing large-scale qualitative and quantitative data at Drazyashakti / Dryzyashakti Trust for workplace disability inclusion.",
       badge: "Analytics",
     },
     {
@@ -1671,7 +1671,7 @@ export function AboutSection() {
         <header class="file-header">
           <h2>src/components/sections/project-showcase.tsx</h2>
           <span class="lang">tsx</span>
-          <span class="lines">161 lines</span>
+          <span class="lines">173 lines</span>
         </header>
         <pre><code class="lang-tsx">'use client';
 
@@ -1717,9 +1717,21 @@ export function ProjectShowcase() {
                     &lt;Badge variant={project.category === 'AI/ML' ? 'purple' : 'emerald'}&gt;
                       {project.category}
                     &lt;/Badge&gt;
-                    &lt;span className="text-xs font-mono text-gray-500 flex items-center gap-1 group-hover:text-indigo-400 transition-colors"&gt;
-                      View Architecture &lt;ArrowUpRight className="w-3.5 h-3.5" /&gt;
-                    &lt;/span&gt;
+                    &lt;div className="flex items-center gap-3"&gt;
+                      &lt;a
+                        href={project.githubUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        onClick={(e) =&gt; e.stopPropagation()}
+                        className="inline-flex items-center gap-1 text-xs font-mono text-gray-500 hover:text-white transition-colors"
+                      &gt;
+                        &lt;Github className="w-3.5 h-3.5" /&gt;
+                        &lt;span&gt;GitHub&lt;/span&gt;
+                      &lt;/a&gt;
+                      &lt;span className="text-xs font-mono text-gray-500 flex items-center gap-1 group-hover:text-indigo-400 transition-colors"&gt;
+                        View Architecture &lt;ArrowUpRight className="w-3.5 h-3.5" /&gt;
+                      &lt;/span&gt;
+                    &lt;/div&gt;
                   &lt;/div&gt;
 
                   &lt;h3 className="text-xl font-bold text-white group-hover:text-indigo-300 transition-colors"&gt;

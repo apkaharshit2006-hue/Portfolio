@@ -42,9 +42,21 @@ export function ProjectShowcase() {
                     <Badge variant={project.category === 'AI/ML' ? 'purple' : 'emerald'}>
                       {project.category}
                     </Badge>
-                    <span className="text-xs font-mono text-gray-500 flex items-center gap-1 group-hover:text-indigo-400 transition-colors">
-                      View Architecture <ArrowUpRight className="w-3.5 h-3.5" />
-                    </span>
+                    <div className="flex items-center gap-3">
+                      <a
+                        href={project.githubUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        onClick={(e) => e.stopPropagation()}
+                        className="inline-flex items-center gap-1 text-xs font-mono text-gray-500 hover:text-white transition-colors"
+                      >
+                        <Github className="w-3.5 h-3.5" />
+                        <span>GitHub</span>
+                      </a>
+                      <span className="text-xs font-mono text-gray-500 flex items-center gap-1 group-hover:text-indigo-400 transition-colors">
+                        View Architecture <ArrowUpRight className="w-3.5 h-3.5" />
+                      </span>
+                    </div>
                   </div>
 
                   <h3 className="text-xl font-bold text-white group-hover:text-indigo-300 transition-colors">

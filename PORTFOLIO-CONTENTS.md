@@ -65,7 +65,7 @@ Portfolio/
 
 | Section | File | Content |
 |---|---|---|
-| Hero | `sections/hero.tsx` | Name, headline, availability pill, CTA buttons, metric bar (94.2% GAN authenticity, 50+ DEI profiles, MySQL, Python) |
+| Hero | `sections/hero.tsx` | Name, headline, availability pill, CTA buttons, metric bar (94.2% GAN authenticity, 3+ trading strategies, MySQL, Python) |
 | About | `sections/about.tsx` | 4 pillars: SQL Warehousing, AI/GANs, DEI BI Research, BBA Education |
 | Projects | `sections/project-showcase.tsx` | 2 featured case studies with architecture diagrams, tech stacks, metrics, clickable detailed modals |
 | Analytics | `sections/live-dashboards.tsx` + `analytics/live-echart-widget.tsx` | Live ECharts line graph (GAN inferences + MySQL queries) and telemetry stat cards |
@@ -86,12 +86,13 @@ Portfolio/
 - **Education:** BBA (Business Analytics), ITM Skills University, 2025–2026
 
 ### Projects
-1. **Neural Handwriting Copying & Generation System** (AI/ML) — GAN pipeline converting digital input to human handwriting. 94.2% authenticity, <120ms synthesis.
- (will it be pausible to add github link)
- i also made a catt app which is in my github i also made a algorythmic trading bot
- i also wna tot add that
+1. **Neural Handwriting Copying & Generation System** (AI/ML) — GAN pipeline converting digital input to human handwriting. 94.2% authenticity, <120ms synthesis. [GitHub](https://github.com/harshit-sinha/handwriting-gan-engine)
+2. **Algorithmic Trading Strategy System** (Data Analytics) — Python backtesting & signal generation engine. [GitHub](https://github.com/apkaharshit2006-hue/Trading-Algorythm) *(placeholder details — refine once the repo is public)*
+
+Every project card now shows a **GitHub** link directly (and in the detail modal).
+
 ### Experience
-1. **NGO Intern — Data & Content Research** at Drazyashakti/Dryzyashakti Trust (2024–Present)
+1. **NGO Intern — Data & Content Research** at Drazyashakti / Dryzyashakti Trust (2024–Present)
 2. **BBA (Business Analytics)** at ITM Skills University (2025–2026)
 
 ### Skills

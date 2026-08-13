@@ -56,36 +56,36 @@ export const PROJECTS: Project[] = [
     ]
   },
   {
-    id: "dei-speaker-analytics",
-    title: "Diversity & Inclusion Research Data Platform",
-    subtitle: "Quantitative Research Pipeline & Content Analytics for NGO Operations",
-    category: "Business Intelligence",
+    id: "trading-algorithm",
+    title: "Algorithmic Trading Strategy System",
+    subtitle: "Python Backtesting & Signal Generation Engine for Automated Market Strategies",
+    category: "Data Analytics",
     featured: true,
-    businessProblem: "Non-profit organizations struggle to systematically evaluate event reach, speaker diversity representation, and workplace inclusion metrics across scattered research documents.",
-    whyItMatters: "Data-driven DEI visibility enables organization leaders to allocate resources effectively and attract key decision-makers for maximum social impact.",
-    architectureDiagramSvg: `<svg viewBox="0 0 800 240" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-auto text-emerald-400"><rect x="40" y="70" width="160" height="100" rx="12" fill="#18181B" stroke="#10B981" stroke-width="2"/><text x="120" y="125" fill="#FFF" text-anchor="middle" font-size="14" font-weight="bold">Raw Research Data</text><path d="M200 120H280" stroke="#10B981" stroke-width="2"/><rect x="280" y="50" width="240" height="140" rx="12" fill="#064E3B" stroke="#10B981" stroke-width="2"/><text x="400" y="105" fill="#A7F3D0" text-anchor="middle" font-size="14" font-weight="bold">MySQL Analytics Engine</text><text x="400" y="135" fill="#D1D5DB" text-anchor="middle" font-size="12">Joins & Aggregations</text><path d="M520 120H600" stroke="#10B981" stroke-width="2"/><rect x="600" y="70" width="160" height="100" rx="12" fill="#18181B" stroke="#6366F1" stroke-width="2"/><text x="680" y="125" fill="#6366F1" text-anchor="middle" font-size="14" font-weight="bold">BI Dashboards</text></svg>`,
-    techStack: ["MySQL", "Python (Pandas)", "Excel Advanced Analytics", "PowerPoint Storytelling"],
-    aiWorkflowDescription: "Categorized qualitative speaker research and conference metrics into relational data structures for quick query retrieval and reporting.",
-    screenshots: ["/assets/projects/dei-analytics.png"],
+    businessProblem: "Manual trading decisions are slow, emotionally biased, and difficult to validate systematically across different market conditions.",
+    whyItMatters: "Automated, data-driven signal generation enables consistent execution, faster backtesting iteration, and reduced emotional decision-making.",
+    architectureDiagramSvg: `<svg viewBox="0 0 800 240" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-auto text-purple-400"><rect x="40" y="70" width="160" height="100" rx="12" fill="#18181B" stroke="#8B5CF6" stroke-width="2"/><text x="120" y="125" fill="#FFF" text-anchor="middle" font-size="14" font-weight="bold">Market Data Feed</text><path d="M200 120H280" stroke="#A78BFA" stroke-width="2"/><rect x="280" y="50" width="240" height="140" rx="12" fill="#2E1065" stroke="#8B5CF6" stroke-width="2"/><text x="400" y="105" fill="#C4B5FD" text-anchor="middle" font-size="14" font-weight="bold">Strategy & Signal Engine</text><text x="400" y="135" fill="#D1D5DB" text-anchor="middle" font-size="12">Backtesting & Risk Checks</text><path d="M520 120H600" stroke="#A78BFA" stroke-width="2"/><rect x="600" y="70" width="160" height="100" rx="12" fill="#18181B" stroke="#10B981" stroke-width="2"/><text x="680" y="125" fill="#10B981" text-anchor="middle" font-size="14" font-weight="bold">Trade Signals</text></svg>`,
+    techStack: ["Python", "Pandas", "NumPy", "Backtesting", "MySQL", "Matplotlib"],
+    aiWorkflowDescription: "Designed rule-based and indicator-driven strategies, validated across historical datasets, and quantified risk-adjusted performance with realistic cost modelling.",
+    screenshots: ["/assets/projects/trading-algorithm.png"],
     businessImpact: [
-      "Curated data for 50+ professional speaker profiles across global disability inclusion initiatives",
-      "Improved conference target alignment by 45% using structured data insights",
-      "Accelerated brochure and communication material generation"
+      "Systematized multi-asset signal generation for consistent execution",
+      "Enabled rapid iteration across backtesting scenarios",
+      "Reduced reliance on manual and emotionally-driven trading"
     ],
     challenges: [
-      "Standardizing qualitative research inputs into structured relational database schemas",
-      "Maintaining low latency queries across cross-tabulated event tracking"
+      "Eliminating look-ahead bias and data leakage in historical backtests",
+      "Modelling realistic transaction costs, slippage, and liquidity constraints"
     ],
     lessonsLearned: [
-      "Relational schema normalization dramatically reduces data duplication in multi-speaker databases",
-      "Visual executive summaries drive faster leadership buy-in than long text documents"
+      "Realistic cost and slippage modelling is essential for trustworthy backtests",
+      "Diversifying across uncorrelated strategies improves overall stability"
     ],
-    githubUrl: "https://github.com/harshit-sinha/dei-analytics-platform",
+    githubUrl: "https://github.com/apkaharshit2006-hue/Trading-Algorythm",
     downloadableReportUrl: "#",
     metrics: [
-      { label: "Profiles Curated", value: "50+", growth: "+100%" },
-      { label: "Data Quality Score", value: "99.1%", growth: "+35%" },
-      { label: "Reporting Speed", value: "2 Days", growth: "-60%" }
+      { label: "Backtest Coverage", value: "5+ Yrs", growth: "—" },
+      { label: "Signal Latency", value: "<50ms", growth: "—" },
+      { label: "Strategies", value: "3+", growth: "—" }
     ]
   }
 ];
@@ -94,7 +94,7 @@ export const EXPERIENCES: ExperienceItem[] = [
   {
     id: "exp-1",
     role: "NGO Intern – Data & Content Research",
-    organization: "Drazyashakti Trust",
+    organization: "Drazyashakti / Dryzyashakti Trust",
     period: "2024 – Present",
     location: "Navi Mumbai, India",
     type: "Internship",

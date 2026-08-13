@@ -307,6 +307,12 @@
       font-size: 0.75rem; font-family: 'JetBrains Mono', monospace;
       color: #6b7280; display: flex; align-items: center; gap: 0.25rem; transition: color 0.2s;
     }
+    .card-ghlink {
+      display: inline-flex; align-items: center; gap: 0.25rem;
+      font-size: 0.75rem; font-family: 'JetBrains Mono', monospace;
+      color: #6b7280; text-decoration: none; transition: color 0.2s;
+    }
+    .card-ghlink:hover { color: #e5e7eb; }
 
     /* Project Modal */
     .modal-overlay {
@@ -668,8 +674,8 @@
           <div class="metric-label">GAN Authenticity</div>
         </div>
         <div class="metric-item">
-          <div class="metric-value" style="color:#34d399">50+</div>
-          <div class="metric-label">DEI Profiles Analyzed</div>
+          <div class="metric-value" style="color:#34d399">3+</div>
+          <div class="metric-label">Trading Strategies</div>
         </div>
         <div class="metric-item">
           <div class="metric-value" style="color:#818cf8">MySQL</div>
@@ -724,7 +730,7 @@
             <span class="badge badge-outline">Analytics</span>
           </div>
           <h3 class="pillar-title">Quantitative Research & DEI BI</h3>
-          <p class="pillar-desc">Analyzing large-scale qualitative and quantitative data at Drazyashakti Trust for workplace disability inclusion.</p>
+          <p class="pillar-desc">Analyzing large-scale qualitative and quantitative data at Drazyashakti / Dryzyashakti Trust for workplace disability inclusion.</p>
         </div>
         <!-- Pillar 4 -->
         <div class="card reveal" style="transition-delay:0.3s">
@@ -757,7 +763,13 @@
           <div>
             <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:1rem">
               <span class="badge badge-purple">AI/ML</span>
-              <span class="view-arch">View Architecture <svg class="icon icon-sm" viewBox="0 0 24 24"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></span>
+              <div style="display:flex;align-items:center;gap:0.875rem">
+                <a href="https://github.com/harshit-sinha/handwriting-gan-engine" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()" title="GitHub Repository" class="card-ghlink">
+                  <svg class="icon icon-sm" viewBox="0 0 24 24"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                  <span>GitHub</span>
+                </a>
+                <span class="view-arch">View Architecture <svg class="icon icon-sm" viewBox="0 0 24 24"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></span>
+              </div>
             </div>
             <h3 class="project-title">Neural Handwriting Copying & Generation System</h3>
             <p class="project-subtitle">Deep Learning GAN Pipeline Converting Digital Input to Human Handwriting</p>
@@ -784,33 +796,41 @@
           </div>
         </div>
 
-        <!-- Project 2: DEI -->
-        <div class="card project-card reveal" style="transition-delay:0.1s" onclick="openModal('dei')">
+        <!-- Project 2: Trading -->
+        <div class="card project-card reveal" style="transition-delay:0.1s" onclick="openModal('trading')">
           <div>
             <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:1rem">
-              <span class="badge badge-emerald">Business Intelligence</span>
-              <span class="view-arch">View Architecture <svg class="icon icon-sm" viewBox="0 0 24 24"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></span>
+              <span class="badge badge-purple">Data Analytics</span>
+              <div style="display:flex;align-items:center;gap:0.875rem">
+                <a href="https://github.com/apkaharshit2006-hue/Trading-Algorythm" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()" title="GitHub Repository" class="card-ghlink">
+                  <svg class="icon icon-sm" viewBox="0 0 24 24"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                  <span>GitHub</span>
+                </a>
+                <span class="view-arch">View Architecture <svg class="icon icon-sm" viewBox="0 0 24 24"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></span>
+              </div>
             </div>
-            <h3 class="project-title">Diversity & Inclusion Research Data Platform</h3>
-            <p class="project-subtitle">Quantitative Research Pipeline & Content Analytics for NGO Operations</p>
+            <h3 class="project-title">Algorithmic Trading Strategy System</h3>
+            <p class="project-subtitle">Python Backtesting & Signal Generation Engine for Automated Market Strategies</p>
             <div class="problem-box">
               <div class="problem-label">Business Problem:</div>
-              <p class="problem-text">Non-profit organizations struggle to systematically evaluate event reach, speaker diversity representation, and workplace inclusion metrics across scattered research documents.</p>
+              <p class="problem-text">Manual trading decisions are slow, emotionally biased, and difficult to validate systematically across different market conditions.</p>
             </div>
             <div class="arch-diagram">
-              <svg viewBox="0 0 800 240" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="40" y="70" width="160" height="100" rx="12" fill="#18181B" stroke="#10B981" stroke-width="2"/><text x="120" y="125" fill="#FFF" text-anchor="middle" font-size="14" font-weight="bold">Raw Research Data</text><path d="M200 120H280" stroke="#10B981" stroke-width="2"/><rect x="280" y="50" width="240" height="140" rx="12" fill="#064E3B" stroke="#10B981" stroke-width="2"/><text x="400" y="105" fill="#A7F3D0" text-anchor="middle" font-size="14" font-weight="bold">MySQL Analytics Engine</text><text x="400" y="135" fill="#D1D5DB" text-anchor="middle" font-size="12">Joins &amp; Aggregations</text><path d="M520 120H600" stroke="#10B981" stroke-width="2"/><rect x="600" y="70" width="160" height="100" rx="12" fill="#18181B" stroke="#6366F1" stroke-width="2"/><text x="680" y="125" fill="#6366F1" text-anchor="middle" font-size="14" font-weight="bold">BI Dashboards</text></svg>
+              <svg viewBox="0 0 800 240" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="40" y="70" width="160" height="100" rx="12" fill="#18181B" stroke="#8B5CF6" stroke-width="2"/><text x="120" y="125" fill="#FFF" text-anchor="middle" font-size="14" font-weight="bold">Market Data Feed</text><path d="M200 120H280" stroke="#A78BFA" stroke-width="2"/><rect x="280" y="50" width="240" height="140" rx="12" fill="#2E1065" stroke="#8B5CF6" stroke-width="2"/><text x="400" y="105" fill="#C4B5FD" text-anchor="middle" font-size="14" font-weight="bold">Strategy &amp; Signal Engine</text><text x="400" y="135" fill="#D1D5DB" text-anchor="middle" font-size="12">Backtesting &amp; Risk Checks</text><path d="M520 120H600" stroke="#A78BFA" stroke-width="2"/><rect x="600" y="70" width="160" height="100" rx="12" fill="#18181B" stroke="#10B981" stroke-width="2"/><text x="680" y="125" fill="#10B981" text-anchor="middle" font-size="14" font-weight="bold">Trade Signals</text></svg>
             </div>
             <div class="tech-badges">
+              <span class="tech-badge">Python</span>
+              <span class="tech-badge">Pandas</span>
+              <span class="tech-badge">NumPy</span>
+              <span class="tech-badge">Backtesting</span>
               <span class="tech-badge">MySQL</span>
-              <span class="tech-badge">Python (Pandas)</span>
-              <span class="tech-badge">Excel Advanced Analytics</span>
-              <span class="tech-badge">PowerPoint Storytelling</span>
+              <span class="tech-badge">Matplotlib</span>
             </div>
           </div>
           <div class="metrics-bar">
-            <div class="metric-card"><div class="val">50+</div><div class="lbl">Profiles Curated</div></div>
-            <div class="metric-card"><div class="val">99.1%</div><div class="lbl">Data Quality Score</div></div>
-            <div class="metric-card"><div class="val">2 Days</div><div class="lbl">Reporting Speed</div></div>
+            <div class="metric-card"><div class="val">5+ Yrs</div><div class="lbl">Backtest Coverage</div></div>
+            <div class="metric-card"><div class="val">&lt;50ms</div><div class="lbl">Signal Latency</div></div>
+            <div class="metric-card"><div class="val">3+</div><div class="lbl">Strategies</div></div>
           </div>
         </div>
 
@@ -972,7 +992,7 @@
             <div class="exp-header">
               <div>
                 <div class="exp-role">NGO Intern – Data & Content Research</div>
-                <div class="exp-org">Drazyashakti Trust</div>
+                <div class="exp-org">Drazyashakti / Dryzyashakti Trust</div>
               </div>
               <div class="exp-meta">
                 <span class="exp-meta-item">
@@ -1317,23 +1337,23 @@
         ],
         github: 'https://github.com/harshit-sinha/handwriting-gan-engine',
       },
-      dei: {
-        badge: 'Business Intelligence', badgeClass: 'badge-emerald',
-        title: 'Diversity & Inclusion Research Data Platform',
+      trading: {
+        badge: 'Data Analytics', badgeClass: 'badge-purple',
+        title: 'Algorithmic Trading Strategy System',
         impact: [
-          'Curated data for 50+ professional speaker profiles across global disability inclusion initiatives',
-          'Improved conference target alignment by 45% using structured data insights',
-          'Accelerated brochure and communication material generation',
+          'Systematized multi-asset signal generation for consistent execution',
+          'Enabled rapid iteration across backtesting scenarios',
+          'Reduced reliance on manual and emotionally-driven trading',
         ],
         challenges: [
-          'Standardizing qualitative research inputs into structured relational database schemas',
-          'Maintaining low latency queries across cross-tabulated event tracking',
+          'Eliminating look-ahead bias and data leakage in historical backtests',
+          'Modelling realistic transaction costs, slippage, and liquidity constraints',
         ],
         lessons: [
-          'Relational schema normalization dramatically reduces data duplication in multi-speaker databases',
-          'Visual executive summaries drive faster leadership buy-in than long text documents',
+          'Realistic cost and slippage modelling is essential for trustworthy backtests',
+          'Diversifying across uncorrelated strategies improves overall stability',
         ],
-        github: 'https://github.com/harshit-sinha/dei-analytics-platform',
+        github: 'https://github.com/apkaharshit2006-hue/Trading-Algorythm',
       },
     };
 
@@ -1388,7 +1408,7 @@
       ] },
       { group: 'Projects', items: [
         { icon: '<svg class="icon icon-sm" viewBox="0 0 24 24" style="color:#c084fc"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>', label: 'Neural Handwriting Copying & Generation System', tag: 'AI/ML', action: () => { closePalette(); document.getElementById('projects').scrollIntoView({ behavior: 'smooth' }); } },
-        { icon: '<svg class="icon icon-sm" viewBox="0 0 24 24" style="color:#c084fc"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>', label: 'Diversity & Inclusion Research Data Platform', tag: 'Business Intelligence', action: () => { closePalette(); document.getElementById('projects').scrollIntoView({ behavior: 'smooth' }); } },
+        { icon: '<svg class="icon icon-sm" viewBox="0 0 24 24" style="color:#c084fc"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>', label: 'Algorithmic Trading Strategy System', tag: 'Data Analytics', action: () => { closePalette(); document.getElementById('projects').scrollIntoView({ behavior: 'smooth' }); } },
       ] },
       { group: 'Navigate', items: [
         { icon: '<svg class="icon icon-sm" viewBox="0 0 24 24" style="color:#a1a1aa"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>', label: 'About', action: () => { closePalette(); document.getElementById('about').scrollIntoView({ behavior: 'smooth' }); } },
@@ -1473,7 +1493,7 @@ HARSHIT'S PROFILE:
 
 KEY PROJECTS:
 1. Neural Handwriting Copying & Generation System (AI/ML): Deep learning GAN pipeline converting digital input to human handwriting. Built with Python, PyTorch/TensorFlow, OpenCV, MySQL, NumPy, Pandas. Impact: 94.2% human visual authenticity rating, sub-120ms stroke rendering latency, end-to-end vector pipeline from raw text to SVG/PNG.
-2. Diversity & Inclusion Research Data Platform (Business Intelligence): Quantitative research pipeline for NGO operations. Built with MySQL, Python (Pandas), Excel Advanced Analytics, PowerPoint Storytelling. Impact: 50+ professional speaker profiles curated, 45% improved conference target alignment, 99.1% data quality score.
+2. Algorithmic Trading Strategy System (Data Analytics): Python backtesting and signal generation engine for automated market strategies. Built with Python, Pandas, NumPy, Backtesting, MySQL, Matplotlib. Focus: eliminating look-ahead bias, realistic cost and slippage modelling, rapid strategy iteration.
 
 EXPERIENCE:
 - NGO Intern - Data & Content Research at Drazyashakti Trust (2024 - Present): Researched speaker profiles, event brochures, and DEI strategic initiatives. Engineered structured data templates increasing outreach speed by 50%.
@@ -1496,7 +1516,8 @@ TONE & STYLE INSTRUCTIONS:
         { keywords: ['python', 'pandas', 'numpy', 'code', 'program'], answer: "Harshit is highly proficient in Python (Pandas, NumPy, OpenCV). He uses it for data pipelines, automation, and training GAN neural networks. He was ranked among top performers in Python Data Handling coursework at ITM Skills University." },
         { keywords: ['mysql', 'sql', 'database', 'query', 'warehouse', 'join'], answer: "Harshit specializes in SQL/MySQL analytics — writing optimized queries, complex joins, subqueries, and aggregations for fast executive reporting. Proficiency level: 88%." },
         { keywords: ['gan', 'generative', 'handwriting', 'ai model', 'neural', 'deep learning'], answer: "He built the Neural Handwriting Copying & Generation System — a conditional GAN that converts digital text into realistic human handwriting. It achieved a 94.2% authenticity rating with sub-120ms synthesis speed." },
-        { keywords: ['dei', 'diversity', 'inclusion', 'ngo', 'research', 'speaker'], answer: "At Drazyashakti Trust (NGO intern), Harshit curated 50+ professional speaker profiles across disability inclusion initiatives, engineered structured data templates boosting outreach speed by 50%, and built a quantitative DEI research platform." },
+        { keywords: ['dei', 'diversity', 'inclusion', 'ngo', 'research', 'speaker'], answer: "At Drazyashakti Trust (NGO intern), Harshit curated 50+ professional speaker profiles across disability inclusion initiatives and engineered structured data templates boosting outreach speed by 50%." },
+        { keywords: ['trading', 'algorithm', 'stock', 'market', 'backtest', 'signal', 'finance', 'quant'], answer: "Harshit is building an Algorithmic Trading Strategy System in Python — a backtesting and signal generation engine with Pandas, NumPy, and MySQL. It focuses on eliminating look-ahead bias, realistic cost modelling, and rapid strategy iteration." },
         { keywords: ['excel', 'spreadsheet', 'analytics'], answer: "Harshit is advanced in MS Excel data analytics (92% proficiency) — pivot analysis, advanced formulas, and building reporting dashboards for executive storytelling." },
         { keywords: ['experience', 'internship', 'work', 'job', 'career', 'role'], answer: "Harshit is an NGO Data & Content Research Intern at Drazyashakti Trust (2024–Present) and is pursuing a BBA in Business Analytics at ITM Skills University (2025–2026)." },
         { keywords: ['education', 'degree', 'college', 'university', 'study'], answer: "He's pursuing a Bachelor's in Business Administration (Business Analytics) at ITM Skills University, Navi Mumbai (2025–2026), focusing on data querying, machine learning, and database analytics." },
@@ -1504,7 +1525,7 @@ TONE & STYLE INSTRUCTIONS:
         { keywords: ['contact', 'email', 'phone', 'reach', 'hire', 'interview', 'recruit'], answer: "You can reach Harshit at apkaharshit2006@gmail.com or +91 9993241666. He's open for Business Intelligence roles, Data Analytics consulting, and AI Automation initiatives." },
         { keywords: ['location', 'mumbai', 'where', 'based'], answer: "Harshit is based in Navi Mumbai, India." },
       ],
-      fallback: "I can help with questions about Harshit's skills (Python, MySQL, GANs, Excel), his GAN handwriting project, the DEI research platform at Drazyashakti Trust, his experience, education, or how to contact him. Try asking about one of those!",
+      fallback: "I can help with questions about Harshit's skills (Python, MySQL, GANs, Excel), his GAN handwriting project, the trading algorithm, his internship at Drazyashakti Trust, his experience, education, or how to contact him. Try asking about one of those!",
     };
 
     function addChatMsg(role, text) {
