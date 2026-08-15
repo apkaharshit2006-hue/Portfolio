@@ -42,11 +42,16 @@ npm install
 ```
 
 ### 2. Configure Environment Variables
-Create `.env.local` in the root directory:
+Copy `.env.example` to `.env.local` and fill in your real values:
+```bash
+cp .env.example .env.local
+```
 ```env
-OPENAI_API_KEY=your_openai_api_key_here
+GROQ_API_KEY=your_groq_api_key_here
 NEXT_PUBLIC_SITE_URL=https://harshitsinha.dev
 ```
+
+> **Security:** `.env.local` is gitignored and never committed. All secrets live in environment variables only — never hardcode API keys in source code. If any key was ever pasted into code or committed to git history, **rotate it immediately** (see Security section below).
 
 ### 3. Launch Local Development Server
 ```bash
@@ -79,8 +84,21 @@ git push -u origin main
 
 ### Step 3: One-Click Deploy to Vercel
 1. Go to [vercel.com/new](https://vercel.com/new) and import your `Portfolio` GitHub repository.
-2. Add your environment variables (`OPENAI_API_KEY`).
+2. Add your environment variables (`GROQ_API_KEY`).
 3. Click **Deploy**. Vercel will automatically build and publish your portfolio with HTTPS and global CDN edge routing.
+
+---
+
+## 🔐 Security & Secret Handling
+
+- **All secrets live in environment variables only** — never as string literals in source code, config files, or comments.
+- `.env` and `.env*.local` are in `.gitignore` and are never committed. Use `.env.example` as the placeholder template.
+- Server-only variables (like `GROQ_API_KEY`) are read via `process.env` in `/api/assistant` and `/api/chat` — never exposed to the browser.
+- Only public-safe values may use the `NEXT_PUBLIC_` prefix. Currently the only one is `NEXT_PUBLIC_SITE_URL` (a public URL).
+- No Supabase, Stripe, database connection strings, OAuth, or JWT secrets exist in this codebase.
+- API responses and error handlers return generic messages and never echo credentials or connection strings.
+
+> ⚠️ **Git history warning:** If any secret was ever hardcoded and committed (e.g., during local development), that value is permanently in git history and must be treated as compromised. **Rotate it immediately** — generate a new key, update Vercel/your provider, and revoke the old one.
 
 ---
 

@@ -122,8 +122,8 @@ npm run build      # production build
 npm run start      # serve production build
 ```
 
-Requires `.env.local`:
+Requires `.env.local` (copy from `.env.example`):
 ```
-OPENAI_API_KEY=your_openai_api_key_here
+GROQ_API_KEY=your_groq_api_key_here
 NEXT_PUBLIC_SITE_URL=https://harshitsinha.dev
 ```
