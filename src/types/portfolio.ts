@@ -14,7 +14,8 @@ export interface Project {
   businessImpact: string[];
   challenges: string[];
   lessonsLearned: string[];
-  githubUrl: string;
+  /** Omitted when the repository is not public yet. */
+  githubUrl?: string;
   downloadableReportUrl?: string;
   metrics: { label: string; value: string; growth?: string }[];
 }

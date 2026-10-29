@@ -1,82 +1,96 @@
 'use client';
 
-import { motion } from 'framer-motion';
 import { Card } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
+import { Reveal } from '@/components/ui/reveal';
+import { SectionHeading } from '@/components/ui/section-heading';
 import { EXPERIENCES } from '@/lib/data';
 import { Briefcase, GraduationCap, Calendar, MapPin } from 'lucide-react';
 
 export function ExperienceTimelineSection() {
   return (
-    <section id="experience" className="py-24 px-6 relative bg-zinc-950/60">
+    <section id="experience" className="relative py-24 sm:py-28 px-6 hairline-top">
       <div className="max-w-4xl mx-auto">
-        <div className="text-center max-w-2xl mx-auto mb-16">
-          <Badge variant="purple" className="mb-3">
-            Career & Academic Trajectory
-          </Badge>
-          <h2 className="text-3xl sm:text-4xl font-bold text-white tracking-tight">
-            Professional Experience & Education
-          </h2>
-          <p className="mt-4 text-sm text-gray-400 leading-relaxed">
-            Hands-on work in non-profit data research combined with rigorous Business Analytics academics.
-          </p>
-        </div>
+        <SectionHeading
+          eyebrow="Career & Academic Trajectory"
+          badgeVariant="purple"
+          title={
+            <>
+              Professional Experience &amp;{' '}
+              <span className="text-gradient">Education</span>
+            </>
+          }
+          description="Hands-on work in non-profit data research combined with rigorous Business Analytics academics."
+        />
 
-        <div className="relative border-l border-white/10 ml-4 sm:ml-8 space-y-12 pl-6 sm:pl-10">
+        <div className="relative pl-6 sm:pl-12 space-y-10">
+          {/* Rail */}
+          <div
+            aria-hidden
+            className="absolute left-[11px] sm:left-[23px] top-2 bottom-2 w-px bg-gradient-to-b from-indigo-500/60 via-purple-500/30 to-transparent"
+          />
+
           {EXPERIENCES.map((exp, idx) => {
             const Icon = exp.type === 'Education' ? GraduationCap : Briefcase;
             return (
-              <motion.div
-                key={exp.id}
-                initial={{ opacity: 0, x: -20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.5, delay: idx * 0.1 }}
-                viewport={{ once: true }}
-                className="relative"
-              >
-                {/* Node Icon */}
-                <div className="absolute -left-[37px] sm:-left-[53px] top-1.5 w-8 h-8 rounded-full bg-black border border-indigo-500/50 flex items-center justify-center text-indigo-400 shadow-lg shadow-indigo-500/20">
-                  <Icon className="w-4 h-4" />
+              <Reveal key={exp.id} index={idx} axis="x" offset={-18} dim={0.22} duration={0.6} className="relative">
+                {/* Node */}
+                <div className="absolute -left-6 sm:-left-12 top-1 flex items-center justify-center">
+                  <div className="relative flex h-6 w-6 items-center justify-center">
+                    <span className="absolute h-6 w-6 rounded-full bg-indigo-500/20 blur-[6px]" />
+                    <span className="relative flex h-5 w-5 items-center justify-center rounded-full bg-black border border-indigo-400/50 text-indigo-300 shadow-[0_0_18px_-2px_rgba(99,102,241,0.8)]">
+                      <Icon className="w-2.5 h-2.5" />
+                    </span>
+                  </div>
                 </div>
 
                 <Card className="p-6">
-                  <div className="flex flex-wrap items-center justify-between gap-2 mb-3">
+                  <div className="flex flex-wrap items-start justify-between gap-3 mb-4">
                     <div>
-                      <h3 className="text-lg font-bold text-white">{exp.role}</h3>
-                      <div className="text-xs text-indigo-400 font-medium mt-0.5">{exp.organization}</div>
+                      <h3 className="text-base sm:text-lg font-semibold text-white leading-snug">
+                        {exp.role}
+                      </h3>
+                      <div className="text-xs text-indigo-300/90 font-medium mt-1">
+                        {exp.organization}
+                      </div>
                     </div>
-                    <div className="flex items-center gap-3 text-xs font-mono text-gray-400">
-                      <span className="flex items-center gap-1">
-                        <Calendar className="w-3.5 h-3.5" />
+                    <div className="flex flex-wrap items-center gap-2">
+                      <Badge variant="outline" className="gap-1.5">
+                        <Calendar className="w-3 h-3" />
                         {exp.period}
-                      </span>
-                      <span className="flex items-center gap-1">
-                        <MapPin className="w-3.5 h-3.5" />
+                      </Badge>
+                      <span className="inline-flex items-center gap-1.5 text-[11px] font-mono text-gray-500">
+                        <MapPin className="w-3 h-3" />
                         {exp.location}
                       </span>
                     </div>
                   </div>
 
-                  <p className="text-xs text-gray-300 mb-4 leading-relaxed">{exp.description}</p>
+                  <p className="text-xs text-gray-300/90 mb-5 leading-relaxed text-pretty">
+                    {exp.description}
+                  </p>
 
-                  <div className="space-y-1.5 mb-4">
-                    {exp.highlights.map((h, i) => (
-                      <div key={i} className="text-xs text-gray-400 flex items-start gap-2">
-                        <span className="text-emerald-400 font-bold">•</span>
-                        <span>{h}</span>
+                  <div className="space-y-2.5 mb-5">
+                    {exp.highlights.map((highlight, i) => (
+                      <div key={i} className="text-xs text-gray-400 flex items-start gap-2.5 leading-relaxed">
+                        <span className="mt-[6px] h-1 w-1 rounded-full bg-emerald-400 shrink-0" />
+                        <span>{highlight}</span>
                       </div>
                     ))}
                   </div>
 
-                  <div className="flex flex-wrap gap-2 pt-3 border-t border-white/5">
-                    {exp.skillsUsed.map((s) => (
-                      <span key={s} className="px-2 py-0.5 rounded text-[10px] font-mono bg-white/5 border border-white/10 text-gray-300">
-                        {s}
+                  <div className="flex flex-wrap gap-2 pt-4 border-t border-white/[0.06]">
+                    {exp.skillsUsed.map((skill) => (
+                      <span
+                        key={skill}
+                        className="px-2.5 py-1 rounded-md text-[10px] font-mono bg-white/[0.04] border border-white/10 text-gray-300 transition-colors duration-300 hover:border-indigo-400/40 hover:text-white"
+                      >
+                        {skill}
                       </span>
                     ))}
                   </div>
                 </Card>
-              </motion.div>
+              </Reveal>
             );
           })}
         </div>

@@ -15,7 +15,7 @@ export const PERSONAL_INFO = {
   },
   summary: `Driven Business Analytics student with specialized expertise in Python, SQL/MySQL data handling, and Generative AI systems. Experienced in developing GAN-based handwriting generation models and managing quantitative DEI research at Drazyashakti Trust.`,
   socials: {
-    github: "https://github.com/harshit-sinha",
+    github: "https://github.com/apkaharshit2006-hue",
     linkedin: "https://linkedin.com/in/harshit-sinha",
     email: "mailto:apkaharshit2006@gmail.com",
   }
@@ -47,7 +47,7 @@ export const PROJECTS: Project[] = [
       "Loss function weighting between style preservation and stroke smoothness is vital for realism",
       "Noise filtering on training images improved discriminator convergence by 35%"
     ],
-    githubUrl: "https://github.com/harshit-sinha/handwriting-gan-engine",
+    githubUrl: "https://github.com/apkaharshit2006-hue/Handwriting-copiwing",
     downloadableReportUrl: "#",
     metrics: [
       { label: "Synthesis Speed", value: "<120ms", growth: "-40%" },
@@ -80,7 +80,7 @@ export const PROJECTS: Project[] = [
       "Realistic cost and slippage modelling is essential for trustworthy backtests",
       "Diversifying across uncorrelated strategies improves overall stability"
     ],
-    githubUrl: "https://github.com/apkaharshit2006-hue/Trading-Algorythm",
+    // githubUrl intentionally omitted: the repository is not public yet.
     downloadableReportUrl: "#",
     metrics: [
       { label: "Backtest Coverage", value: "5+ Yrs", growth: "—" },
